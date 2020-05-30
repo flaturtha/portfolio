@@ -25,19 +25,16 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+      <div className="site">
+        <Header siteTitle={data.site.siteMetadata.title} />
+        <div className="container mx-auto">
+          <main className="site-content mb-20">{children}</main>
+        </div>
+        <footer className="text-shark-200 mt-auto p-6">
+          <div className="container mx-auto flex flex-row justify-center">
+          <p className="mr-4">© {new Date().getFullYear()} Rich Cook</p>
+          <a href="/policies/" className="underline">Policies</a>
+          </div>    
         </footer>
       </div>
     </>

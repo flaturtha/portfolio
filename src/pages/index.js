@@ -8,14 +8,26 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <div className="flex flex-row justify-around mt-20">
+      <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+        <Image />
+      </div>
+      <div className="">
+        <h1 className="text-6xl">I'm a writer &hellip; </h1>
+        <h2>content marketing &middot; prose fiction &middot; screenwriting</h2>
+      </div>
     </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    <hr className="mt-20 text-shark-200" />
+    <div className="mt-10">
+      <h2 className="font-black">My story:</h2>
+      <p>I wrote my 1st book in the 4th grade, a magical little thing called <em>The Wide World of Sharks</em>, a #1 Bestseller in its category (books written by me in the 4th grade) and sold out its 1st printing (of one copy). But that was the beginning of a writing career &hellip; </p>
+    </div>
+    <div>
+      <h2>Resume:</h2>
+    </div>
+    <div>
+      <h2>What I write:</h2>
+    </div>
   </Layout>
 )
 
