@@ -25,18 +25,16 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <div className="site">
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div className="container mx-auto">
-          <main className="site-content mb-20">{children}</main>
-        </div>
-        <footer className="text-shark-200 mt-auto p-6">
-          <div className="container mx-auto flex flex-row justify-center">
-          <p className="mr-4">© {new Date().getFullYear()} Rich Cook</p>
-          <a href="/policies/" className="underline">Policies</a>
-          </div>    
-        </footer>
-      </div>
+      <Header siteTitle={data.site.siteMetadata.title} />
+      
+      <main className="container mx-auto p-6">{children}</main>
+      
+      <footer className="bg-shark-100 text-shark-200 pt-6 pb-3">
+        <div className="container mx-auto flex flex-row justify-center">
+        <p className="mr-4">© {new Date().getFullYear()} Rich Cook</p>
+        <a href="/policies/" className="underline">Policies</a>
+        </div>    
+      </footer>
     </>
   )
 }

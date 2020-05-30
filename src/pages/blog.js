@@ -7,11 +7,11 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 
 
-const CopywritingPage = () => (
+const BlogPage = () => (
   <Layout>
-    <SEO title="copywriting" />
-    <h1>a sampling of paid commerical writing projects</h1>
+    <SEO title="blog" />
+    <h1>Musings and ramblings on writing, etc.</h1>
   </Layout>
 )
 
-export default CopywritingPage
+export default BlogPage
